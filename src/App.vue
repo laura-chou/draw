@@ -60,17 +60,14 @@
   </v-card>
 </template>
 <style lang="scss">
-  .v-toolbar {
-    height: 60px !important;
-  }
   .v-card {
     height: 100vh;
   }
   .v-application {
-    height: calc(100% - 60px);
+    height: calc(100% - 56px);
   }
   .v-application--wrap {
-    min-height: calc(100% - 60px) !important;
+    min-height: calc(100% - 56px) !important;
     background-image: url('./assets/background.png');
     background-size: 100% 100%;
   }
