@@ -3,7 +3,7 @@
     <SlotMachine
         ref="SlotMachine"
         :width="weight"
-        height="240px"
+        height="250px"
         :prizes="prizes"
         :blocks="blocks"
         :slots="slots"
@@ -60,8 +60,8 @@ export default ({
         fontSize: '22px'
       },
       defaultConfig: {
-        rowSpacing: '10px',
-        colSpacing: '30px'
+        rowSpacing: '15px',
+        colSpacing: '25px'
       }
     }
   },
@@ -69,18 +69,22 @@ export default ({
     slots () {
       let order1 = []
       let order2 = []
+      let order3 = []
       const items = store.getters.checkedItem
       if (items.length > 1) {
         for (const key in items) {
           order1.push(parseInt(key))
           order2.push(parseInt(key))
+          order3.push(parseInt(key))
         }
       }
       order1 = this.shuffle(order1)
       order2 = this.shuffle(order2)
+      order3 = this.shuffle(order3)
       const arr = [
         { order: order1, direction: 1 },
-        { order: order2, direction: -1 }
+        { order: order2, direction: -1 },
+        { order: order3, direction: 1 }
       ]
       return arr
     },
@@ -102,24 +106,11 @@ export default ({
       return arr
     },
     weight () {
-      let width = 400
-      if (window.innerWidth < 500) {
-        width = window.innerWidth - 30
+      let width = 600
+      if (window.innerWidth < 650) {
+        width = window.innerWidth - 40
       }
       return width + 'px'
-    },
-    height () {
-      let height = 150
-      if (store.getters.checkedItem.length >= 5) {
-        height += 150
-      }
-      if (store.getters.checkedItem.length >= 9) {
-        height += 150
-      }
-      if (window.innerWidth < 500) {
-        height -= 30
-      }
-      return height + 'px'
     }
   },
   methods: {
@@ -129,7 +120,7 @@ export default ({
         this.$refs.SlotMachine.play()
         setTimeout(() => {
           const index = Math.floor(Math.random() * this.prizes.length)
-          this.$refs.SlotMachine.stop([index, index])
+          this.$refs.SlotMachine.stop([index, index, index])
         }, 1000)
       }
     },
