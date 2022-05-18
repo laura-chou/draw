@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.942c470b8cf0ce23ccd2e5fe9e85aba2.js"
+  "precache-manifest.e7e09dec0cf2ef0bd6a57cfdf7c5bea5.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "draw_lots"});
