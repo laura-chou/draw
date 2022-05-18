@@ -3,15 +3,15 @@ module.exports = {
     config
       .plugin('html')
       .tap(args => {
-        args[0].title = 'DrawLots'
+        args[0].title = 'Draw'
         return args
       })
   },
   publicPath: './',
   pwa: {
     // APP 名稱
-    name: 'DrawLots',
-    short_name: 'DrawLots',
+    name: '抽獎',
+    short_name: '抽獎',
     // APP 主題顏色
     theme_color: '#cedeed',
     // APP 啟動畫面背景色
@@ -21,7 +21,7 @@ module.exports = {
     // APP 開始畫面網址
     start_url: './',
     // 顯示模式
-    display: 'standalone',
+    display: 'fullscreen',
     icons: [
       {
         src: './img/icons/android-chrome-192x192.png',
