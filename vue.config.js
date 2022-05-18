@@ -94,6 +94,12 @@ module.exports = {
         src: './img/icons/mstile-150x150.png',
         sizes: '150x150',
         type: 'image/png'
+      },
+      {
+        src: './img/icons/maskable.png',
+        sizes: '196x196',
+        type: 'image/png',
+        purpose: 'maskable'
       }
     ]
   },
