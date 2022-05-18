@@ -1,4 +1,4 @@
-# Draw lots 抽籤 
+# Draw 抽獎 
 
 ### 設定
 + 項目的新增、修改、刪除
@@ -21,4 +21,4 @@
 !['中獎記錄頁面圖片'](record.jpg)
 
 ## Demo
-https://laura-chou.github.io/draw_lots/
+https://laura-chou.github.io/draw/
