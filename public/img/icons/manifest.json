@@ -1,4 +1,11 @@
 {
+  "name": "抽獎",
+  "short_name": "抽獎",
+  "theme_color": "#cedeed",
+  "background_color": "#000",
+  "scope": "./",
+  "start_url": "./",
+  "display": "fullscreen",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
