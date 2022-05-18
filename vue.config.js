@@ -14,6 +14,7 @@ module.exports = {
     short_name: '抽獎',
     // APP 主題顏色
     theme_color: '#cedeed',
+    msTileColor: '#e2f0fd',
     // APP 啟動畫面背景色
     background_color: '#000',
     // APP 顯示範圍
@@ -94,12 +95,6 @@ module.exports = {
         src: './img/icons/mstile-150x150.png',
         sizes: '150x150',
         type: 'image/png'
-      },
-      {
-        src: './img/icons/maskable.png',
-        sizes: '196x196',
-        type: 'image/png',
-        purpose: 'maskable'
       }
     ]
   },
