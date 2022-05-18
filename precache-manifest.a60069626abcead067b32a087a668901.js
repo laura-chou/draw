@@ -52,7 +52,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "img/winner.4c802e62.png"
   },
   {
-    "revision": "3753b3979fafe1da09540d7aa1806337",
+    "revision": "1af5e91c05792ed2adb4ee57bf93e2df",
     "url": "index.html"
   },
   {
@@ -80,7 +80,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/chunk-vendors.b78a8a31.js"
   },
   {
-    "revision": "6b6e6febba0a3451078101834e0fc22a",
+    "revision": "40457cb4df178e238f195fd421fe557e",
     "url": "manifest.json"
+  },
+  {
+    "revision": "43843e54a63c1bfc06f28048c7f86fcb",
+    "url": "static/manifest.json"
   }
 ]);
