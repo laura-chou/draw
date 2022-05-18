@@ -2,7 +2,7 @@
   "name": "抽獎",
   "short_name": "抽獎",
   "theme_color": "#cedeed",
-  "background_color": "#000",
+  "background_color": "#e2f0fd",
   "scope": "./",
   "start_url": "./",
   "display": "fullscreen",
