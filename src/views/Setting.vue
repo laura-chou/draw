@@ -108,7 +108,7 @@
 </template>
 <style lang="scss">
   .setting {
-    height: 90%;
+    height: 100%;
     table tr{
       th {
         font-size: 20px !important;

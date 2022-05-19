@@ -1,26 +1,17 @@
 <template>
-  <v-card class="mx-auto">
-    <v-app-bar
-      dark
-      src="./assets/banner.png"
-    >
+  <div>
+    <v-app-bar dark src="./assets/banner.png">
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-
       <v-toolbar-title>抽獎</v-toolbar-title>
     </v-app-bar>
-
     <v-navigation-drawer
       src="./assets/navigation.png"
-      width="30%"
       v-model="drawer"
       absolute
       temporary
       dark
     >
-      <v-list
-        nav
-        dense
-      >
+      <v-list nav dense>
         <v-list-item-group
           v-model="group"
           active-class="deep-purple--text text--accent-4"
@@ -57,39 +48,14 @@
     <v-app>
       <router-view v-if="isRouterActive"/>
     </v-app>
-  </v-card>
+  </div>
 </template>
 <style lang="scss">
-  $height: 58px;
-  .v-toolbar {
-    height: #{$height} !important;
-    .v-image {
-      height: #{$height} !important;
-    }
-  }
-  .v-card {
-    height: 100vh;
-  }
-  .v-application {
-    height: calc(100% - #{$height});
-  }
+  $height: 56px;
   .v-application--wrap {
-    min-height: calc(100% - #{$height}) !important;
+    min-height: calc(100vh - #{$height}) !important;
     background-image: url('./assets/background.png');
     background-size: 100% 100%;
-  }
-  .alert-border {
-    border: 10px solid;
-    border-image: linear-gradient(320deg, #37ecba 0%, #72afd3 100%) 1;
-    border-left: 0;
-    border-right: 0;
-    img {
-      width: 60px;
-      margin: 5% 0 8% 0;
-    }
-    h1 {
-      margin-bottom: 5%;
-    }
   }
 </style>
 <script>
