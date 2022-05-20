@@ -57,6 +57,19 @@
     background-image: url('./assets/background.png');
     background-size: 100% 100%;
   }
+  .alert-border {
+    border: 10px solid;
+    border-image: linear-gradient(320deg, #37ecba 0%, #72afd3 100%) 1;
+    border-left: 0;
+    border-right: 0;
+    img {
+      width: 60px;
+      margin: 5% 0 8% 0;
+    }
+    h1 {
+      margin-bottom: 5%;
+    }
+  }
 </style>
 <script>
 
