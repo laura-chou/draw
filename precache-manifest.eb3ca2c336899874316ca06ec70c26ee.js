@@ -4,8 +4,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "alarms/bonus.mp3"
   },
   {
-    "revision": "a2661e24b512428e993b",
-    "url": "css/app.1eaef6e1.css"
+    "revision": "24fd7a370d8b6e0e7a6f",
+    "url": "css/app.65c8da36.css"
   },
   {
     "revision": "25b4fac1204c04e2200c",
@@ -52,12 +52,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "img/winner.4c802e62.png"
   },
   {
-    "revision": "6cdb267d44451fd91ca1f9f21a0b510f",
+    "revision": "4dbfe8d0288ae8924eea8edce5fa84cd",
     "url": "index.html"
   },
   {
-    "revision": "a2661e24b512428e993b",
-    "url": "js/app.fae0a09c.js"
+    "revision": "24fd7a370d8b6e0e7a6f",
+    "url": "js/app.fa35e6b5.js"
   },
   {
     "revision": "25b4fac1204c04e2200c",
