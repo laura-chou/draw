@@ -5,7 +5,7 @@
           <v-col class="pb-0" cols="7" sm="9">
             <v-text-field
               v-model="item"
-              label="請輸入項目，Enter 新增"
+              label="請由此輸入項目，Enter 新增"
               outlined
               maxlength="10"
               hide-details
@@ -150,6 +150,15 @@ export default ({
       ],
       switch1: store.getters.exclude,
       validate: '至少勾選 2 筆項目'
+    }
+  },
+  created () {
+    if (store.getters.checkedItem.length <= 1 || this.items.length === 0) {
+      this.$swal.fire({
+        icon: 'warning',
+        title: '請至少新增並勾選 2 筆項目',
+        showCancelButton: false
+      })
     }
   },
   computed: {
